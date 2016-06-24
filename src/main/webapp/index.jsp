@@ -4,7 +4,7 @@
 %>
 <html>
 <body>
-<h2>WELCOME TO SJTU!</h2> 
+<h2>WELCOME TO SJTU sviqa Lab!</h2> 
 
 </body>
 </html>
