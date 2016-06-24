@@ -1,0 +1,110 @@
+.upload_area {
+    /*width: 350px;*/
+    height: 55px;
+    border: 3px dashed #DDD;
+    background: white;
+    color: #999;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+.preview {
+    max-width: 350px;
+    max-height: 150px;
+}
+
+.upload_btn {
+    background-color: #269AE7;
+    outline: 1px solid #296594;
+    border: 1px solid #9BC5FC;
+    width: 85px;
+    color: white;
+    padding: 3px 15px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.search_btn {
+    outline: 1px solid #335590;
+    border: 1px solid #9BC5FC;
+    background-color: #2E8DF0;
+    width: 75px;
+    color: white;
+    cursor: pointer;
+}
+.defined_btn {
+    padding: 3px 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.success_btn {
+    cursor: pointer;
+    border: 1px solid #C6C7C8;
+    background: -moz-linear-gradient(top, #FDFDFD, #E9E9E9);
+    background: -webkit-linear-gradient(top, #FDFDFD, #E9E9E9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FDFDFD', endColorstr='#E9E9E9');
+    -webkit-box-shadow: #CACDD1 0 1px 3px;
+    -moz-box-shadow: #CACDD1 0 1px 3px;
+    box-shadow: #CACDD1 0 1px 3px;
+    border-radius: 4px;
+    outline: none;
+    height: 26px;
+    line-height: 20px;
+    width: 92px;
+}
+
+.success_btn:hover {
+    border: 1px solid #B3CBE2;
+    background: -moz-linear-gradient(top, #FFF, #CAE2F7);
+    background: -webkit-linear-gradient(top, #FFF, #CAE2F7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CAE2F7');
+    -webkit-box-shadow: #E2E7ED 0 1px 3px;
+    -moz-box-shadow: #E2E7ED 0 1px 3px;
+    box-shadow: #E2E7ED 0 1px 3px;
+}
+
+.upload_files {
+    position: absolute;
+    left:510px;
+    top:268px;
+}
+#files_list {
+    margin: 5px 25px 0 0;
+    text-align: left;
+    height: 45px;
+    overflow: auto;
+}
+#files_list li {
+    margin: 3px 0;
+    list-style: none;
+    padding-left: 28px;
+}
+#files_list span {
+    width: 190px;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.file_text {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #C6C6C6;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    border-radius: 4px;
+}
+.name_ellipsis {
+    /*width: 320px;*/
+    float:right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin:0 12px 0 0;
+}
+canvas {
+     border: 1px solid #C6C6C6;
+ }

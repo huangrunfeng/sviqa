@@ -1,0 +1,508 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.eot'), url('../fonts/OpenSans.ttf'), url('../fonts/OpenSans.woff');
+}
+
+@font-face {
+    font-family: 'OpenSans_SB';
+    src: url('../fonts/OpenSans-Semibold.eot'), url('../fonts/OpenSans-Semibold.ttf'), url('../fonts/OpenSans-Semibold.woff');
+}
+
+/*__________________________________________________________________________ # DEFAULTS
+*/
+a:active, a:focus,
+input:active, input:focus {
+    outline: 0;
+}
+
+body {
+    text-align: left;
+    font: 13px/1.5 Microsoft YaHei,Arial,sans-serif;
+    color: #302F2F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    color: #2577e3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #2577e3;
+    text-decoration: underline;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-bottom: 0;
+}
+
+li {
+    line-height: 20px;
+}
+
+ul.unstyled,
+ol.unstyled {
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.inline,
+ol.inline {
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.inline li,
+ol.inline li {
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+
+    *zoom: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+dl {
+    margin-bottom: 20px;
+}
+
+dt,
+dd {
+    line-height: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 10px;
+}
+
+.cleaner {
+    clear: both;
+}
+
+.hr {
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    margin-bottom: 20px;
+}
+
+.first {
+    margin-top: 20px !important;
+}
+
+.last {
+    margin-right: 0 !important;
+}
+
+.last_btm {
+    margin-bottom: 0 !important;
+}
+
+/*__________________________________________________________________________ # BASIC
+*/
+#wrapper {
+    position: relative;
+}
+
+.placeholder {
+    color: #999999;
+}
+
+.quick_search_div {
+    list-style: none;
+    margin: 23px 0 5px 17px;
+    line-height: 35px;
+    height: 35px;
+    width: 197px;
+    background: url("../../img/qs.png") no-repeat;
+}
+
+.quick_search_input {
+    border: 0;
+    background-color: #ebebeb;
+    margin-left: 40px;
+    *margin-left: 20px;
+    margin-top: 8px;
+    color: #999999;
+}
+
+.top_nav {
+    width: 100%;
+    height: 120px;
+    background-color: #cd0a00;
+    text-align: center;
+}
+
+.top_nav_td {
+    background-color: #cd0a00;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.top_nav_td_active {
+    background-color: #9d0800;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.top_nav_text {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.top_nav a {
+    text-decoration: none;
+}
+
+.top_nav a:hover,
+.top_nav a:focus {
+    text-decoration: underline;
+}
+
+/*left menu*/
+.nav {
+    margin-left: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.nav li {
+    line-height: 35px;
+}
+
+.nav li a {
+    display: block;
+    color: #999999;
+}
+
+.nav li a:hover,
+.nav li a:focus {
+    color: #999999;
+    text-decoration: none;
+    background-image: url("../../img/a_hover.png");
+}
+
+.nav li a img {
+    max-width: none;
+}
+
+.nav .pull-right {
+    float: right;
+}
+
+.nav-header {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.nav li + .nav-header {
+    margin-top: 9px;
+}
+
+.nav-list {
+    margin-bottom: 0;
+}
+
+.nav-list li a,
+.nav-list .nav-header {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    height: 38px;
+    padding-left: 16px;
+    text-align: left;
+}
+
+.nav-list .nav-header.active {
+    background: url("../../img/arrowdown.png") no-repeat 175px -2px;
+    *background: url("../../img/arrowdown.png") no-repeat 175px -8px;
+    background-size: 45px;
+    line-height: 38px;
+}
+
+.nav-list .nav-header.unactive {
+    background: url("../../img/arrowup.png") no-repeat 175px -2px;
+    *background: url("../../img/arrowup.png") no-repeat 175px -8px;
+    background-size: 45px;
+    line-height: 38px;
+}
+
+.nav-list li a {
+    padding-left: 35px;
+}
+
+.nav-list .active a,
+.nav-list .active a:hover,
+.nav-list .active a:focus {
+    color: #ffffff;
+    background-color: #2577e3;
+}
+
+.nav .dropdown.active a:hover,
+.nav .dropdown.active a:focus {
+    cursor: pointer;
+}
+
+.nav li.dropdown.open.active a:hover,
+.nav li.dropdown.open.active a:focus {
+    color: #ffffff;
+    background-color: #999999;
+    border-color: #999999;
+}
+
+/*__________________________________________________________________________ # DATATABLE
+*/
+.cellEllipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+}
+
+.W_main {
+    width: 980px;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    background: #F8F8F8;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.left_nav_td {
+    height: 100%;
+    width: 744px;
+    padding: 0 0 20px 6px;
+    vertical-align: top;
+}
+
+.right_main_td {
+    border-left: 1px solid #D7D7D7;
+    vertical-align: top;
+    width: 236px;
+}
+
+.type_title {
+    margin: 0 5px 0 2px;
+    height: 30px;
+    border-bottom: 2px solid #cd0a00;
+    padding-left: 3px;
+}
+
+.type_title ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.type_title li {
+    float: left;
+    line-height: 30px;
+}
+
+.type_title li:first-child {
+    float: left;
+}
+
+.link_title {
+    padding-left: 4px;
+    color: #545351;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.list_box {
+    margin: 0 6px 0 14px;
+}
+
+.box_ul {
+    margin-bottom: 6px;
+    border-bottom: 1px dashed #cd0a00;
+    padding: 2px 0;
+    height: auto;
+    clear: both;
+}
+
+.box_ul input[type="checkbox"] {
+    display: none;
+}
+
+.box_ul ul {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.box_ul li {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 17px;
+}
+
+.box_ul li a {
+    color: #444;
+}
+
+.box_ul li a:hover {
+    color: #cd0a00;
+    text-decoration: none;
+}
+
+.form_type_div {
+    color: #444;
+    margin: 5px 0 3px;
+    height: 20px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    text-rendering: optimizelegibility;
+    text-align: left;
+}
+
+.icon {
+    background: url(../../img/formtype.png) no-repeat 0 0;
+    display: inline-block;
+    position: relative;
+    padding-left: 0;
+    background-size: 19px 19px;
+}
+
+.site_icon {
+    width: 19px;
+    height: 17px;
+    background-position: 0 0;
+    top: 2px;
+    margin-right: 6px;
+}
+
+.form_icon {
+    background: url(../../img/hot1.gif) no-repeat 0 0;
+    display: inline-block;
+    position: relative;
+    padding-left: 0;
+    background-size: 26px 10px;
+    width: 26px;
+    height: 10px;
+}
+
+.user_related_False {
+    display: none;
+}
+
+.filter_text {
+    background: #FFFF96;
+}
+
+.search_item {
+    width: 100%;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.search_item li {
+    float: left;
+    margin-left: 12px;
+}
+
+.search_item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search_item input[type="text"],select {
+    width: 165px;
+    margin-bottom: auto;
+    padding: 2px 5px;
+}
+
+.search_item .hasDatepicker {
+    cursor: pointer;
+}
+
+#formDataTable {
+    border: 1px solid #BEBEBE;
+    margin: 8px auto;
+}
+#formDataTable td {
+    border-right: 1px solid #BEBEBE;
+    border-top: 1px solid #BEBEBE;
+    text-align: center;
+    line-height: 24px;
+    padding: 0px 0px;
+}
+#formDataTable th {
+    border-right: 1px solid #BEBEBE;
+    border-top: 1px solid #BEBEBE;
+    text-align: center;
+    line-height: 24px;
+    padding: 0px 0px;
+}
+#formDataTable td:last-child {
+    border-right: none;
+}
+
+#formDataTable a  {
+    cursor: pointer;
+    color: #444;
+    text-decoration: none;
+}
+#formDataTable a:hover {
+    cursor: pointer;
+    color: #cd0a00;
+    text-decoration: none;
+}
